@@ -2,6 +2,7 @@ package com.neusoft.$temp.base.extendsOrder;
 
 public  class Parent {
 	int test_file=1;
+	int test_file1=2;
 	public static int age;
 	public String name;
 	static {
