@@ -1,6 +1,7 @@
 package com.neusoft.$temp.base.extendsOrder;
 
 public  class Parent {
+	int test_file=1;
 	public static int age;
 	public String name;
 	static {
