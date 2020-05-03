@@ -21,6 +21,7 @@
     <update id="deleteUser" parameterType="com.neusoft.springwork.entity.UserInfo">
         update t_sys_user set is_deleted=1,gmt_modified=now(),create_by=#{createBy} WHERE id=#{id}
     </update>
+    <!--真删除用户-->
     <delete id="realDeleteUser" parameterType="com.neusoft.springwork.entity.UserInfo">
         delete from t_sys_user where id=#{id};
     </delete>
