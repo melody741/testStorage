@@ -40,16 +40,7 @@ public class UserInfo {
      * @author xhy
      * @date
      */
-    private Integer sex;
-
-    /*
-     * 展示用的性别：男，女，未知
-     * @author xhy
-     * @params
-     * @return
-     * @when 2020/5/3 14:56
-     */
-    private String sex_showed;
+    private String sex;
 
     /**
      * 用户电话
@@ -128,6 +119,7 @@ public class UserInfo {
      */
     private Integer isDeleted;
 
+
     @Override
     public String toString() {
         return "UserInfo{" +
@@ -135,8 +127,7 @@ public class UserInfo {
                 ", account='" + account + '\'' +
                 ", name='" + name + '\'' +
                 ", role=" + role +
-                ", sex=" + sex +
-                ", sex_showed='" + sex_showed + '\'' +
+                ", sex='" + sex + '\'' +
                 ", phone='" + phone + '\'' +
                 ", password='" + password + '\'' +
                 ", email='" + email + '\'' +
@@ -149,14 +140,6 @@ public class UserInfo {
                 ", version=" + version +
                 ", isDeleted=" + isDeleted +
                 '}';
-    }
-
-    public String getSex_showed() {
-        return sex_showed;
-    }
-
-    public void setSex_showed(String sex_showed) {
-        this.sex_showed = sex_showed;
     }
 
     public String getId() {
@@ -191,11 +174,11 @@ public class UserInfo {
         this.role = role;
     }
 
-    public Integer getSex() {
+    public String getSex() {
         return sex;
     }
 
-    public void setSex(Integer sex) {
+    public void setSex(String sex) {
         this.sex = sex;
     }
 

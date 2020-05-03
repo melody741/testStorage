@@ -36,13 +36,13 @@ public class UserServiceImpl implements UserService {
         List<UserInfo> list=userDao.askUser(userInfo);
         for(int i=0;i<list.size();i++){
             UserInfo userInfo1 = list.get(i);
-            int sex=userInfo1.getSex();
+            String sex=userInfo1.getSex();
             switch(sex){
-                case 0: userInfo1.setSex_showed("男");
+                case "0": userInfo1.setSex("男");
                         break;
-                case 1: userInfo1.setSex_showed("女");
+                case "1": userInfo1.setSex("女");
                         break;
-                case 2: userInfo1.setSex_showed("未知");
+                case "2": userInfo1.setSex("未知");
                     break;
             }
             list.set(i, userInfo1);
